@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App.js";
+import AppInput from "./components/AppInput.js";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<AppInput />, document.getElementById("wrapper"));
