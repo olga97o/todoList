@@ -5,15 +5,15 @@ class AppInput extends Component {
     constructor(props) {
         super(props);
         this.state = {items: [], text: ''};
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange(e) {
-        this.setState({text: e.target.value});
-    }
+    handleChange = (e) => {
+        this.setState({
+            text: e.target.value
+        });
+    };
 
-    handleSubmit(e) {
+    handleSubmit = (e) => {
 
         e.preventDefault();
         if (!this.state.text.length) {
@@ -29,7 +29,7 @@ class AppInput extends Component {
             items: [...state.items, newItem],
             text: ''
         }));
-    }
+    };
 
     render() {
         return (
